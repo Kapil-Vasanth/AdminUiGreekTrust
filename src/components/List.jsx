@@ -17,7 +17,7 @@ function List({ users, updateUser, deleteUser ,selectedUsers, handleCheckboxChan
 
 
   return (
-    <div>
+    <div className="tableList">
       <table>
         <thead>
           <tr>

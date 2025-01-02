@@ -182,3 +182,20 @@ th, td {
 .deleteButton{
   background: #fc4a4a;
 }
+
+@media only screen and (width < 800px) {
+  #root{
+    width: 400px;
+    overflow: clip;
+  }
+  .pagination {
+    flex-flow: wrap;
+  }
+  .form-elements input {
+    width: 100%;
+  }
+  .tableList{
+    width: 100%;
+    overflow-x: scroll;
+  }
+}
