@@ -179,3 +179,6 @@ th, td {
   height: 20px;
   fill: white;
 }
+.deleteButton{
+  background: #fc4a4a;
+}

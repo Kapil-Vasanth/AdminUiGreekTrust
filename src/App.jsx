@@ -8,12 +8,18 @@ import Search from "./components/Search";
 
 function App() {
   const [count, setCount] = useState(0);
-  const [users, setUsers] = useState(usersData);
-  const [filteredData, setFilteredData] = useState(users);
-  const [paginatedData, setPaginatedData] = useState(usersData);
+  const [users, setUsers] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+  const [paginatedData, setPaginatedData] = useState([]);
   const [pagination, setPagination] = useState(0);
   const [filterNameEmailRole, setFilterNameEmailRole] = useState("");
   const [selectedUsers, setSelectedUsers] = useState([]); // State for selected user IDs
+
+  useEffect(() => {
+    fetch('https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json')
+    .then(res => res.json())
+    .then(data => setUsers(data))
+  },[])
 
   useEffect(() => {
     if (filterNameEmailRole === "") {

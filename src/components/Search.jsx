@@ -16,7 +16,7 @@ function Search({setFilterNameEmailRole}) {
   return (
     <div className='search-component'>
       <form onSubmit={handleSubmit}>
-        <input type="text" value={filterValue} onChange={handleChangeFilter} className='search-input' />
+        <input type="text" value={filterValue} onChange={handleChangeFilter} className='search-input' placeholder='Search by name, email or role' />
       </form>
     </div>
   )

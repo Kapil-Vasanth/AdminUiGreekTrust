@@ -26,7 +26,7 @@ function Pagination({pagination, totalUsers, setPagination, handleDeleteSelected
   return (
     <div className='pagination'>
         <div>
-            <button type='button' onClick={handleDeleteSelected}>Delete Selected</button>
+            <button type='button' onClick={handleDeleteSelected} className='deleteButton'>Delete Selected</button>
         </div>
         <div className='pagination-btns'>
         {paginationBtns()}
