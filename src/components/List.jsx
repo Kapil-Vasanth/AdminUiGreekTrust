@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import EditUser from "./EditUser";
-function List({ users, updateUser, deleteUser, selectedUser, setSelectedUser,selectedUsers, handleCheckboxChange, handleSelectAll }) {
+function List({ users, updateUser, deleteUser ,selectedUsers, handleCheckboxChange, handleSelectAll }) {
   // display the list accepted by the props
   const [showModal, setShowModal] = useState(false);
-  
+  const [selectedUser, setSelectedUser] = useState(null);
 
   const handleClick = (user) => {
-    
     if (user) {
       setShowModal(true);
       setSelectedUser(user);
