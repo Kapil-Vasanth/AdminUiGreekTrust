@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import favLogo from "/favLogo.svg";
 import "./App.css";
 import List from "./components/List";
 import usersData from "./users.json";
